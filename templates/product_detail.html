@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-6">
+            <img src="{{ product.image }}" class="img-fluid">
+        </div>
+
+        <div class="col-md-6">
+            <h1>{{ product.name }}</h1>
+            <h2 class="text-success">₹{{ product.price }}</h2>
+            <p>{{ product.description }}</p>
+
+            <button class="btn btn-primary">
+                Add To Cart
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<hr>
+
+<h3>Reviews</h3>
+
+{% for rating in ratings %}
+
+<div class="card mb-2">
+
+    <div class="card-body">
+
+        <h5>
+            ⭐ {{ rating.stars }}/5
+        </h5>
+
+        <p>
+            {{ rating.review }}
+        </p>
+
+    </div>
+
+</div>
+
+{% empty %}
+
+<p>No reviews yet.</p>
+
+{% endfor %}
+</html>
