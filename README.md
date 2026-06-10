@@ -1,20 +1,22 @@
 # Django E-Commerce Store
 
-Features:
-- User Authentication
+A full-stack e-commerce web application built with Django and Bootstrap.
+
+## Features
+- User Authentication (Login/Register)
 - Product Categories
 - Product Reviews
-- Cart
+- Shopping Cart
 - Wishlist
-- Orders
-- Admin Panel
+- Order Management
+- Admin Dashboard
 
-Tech Stack:
+## Tech Stack
 - Python
 - Django
 - SQLite
 - Bootstrap
 - Render
 
-Live Demo:
+## Live Demo
 https://django-e-commerce-store.onrender.com
